@@ -1,0 +1,10 @@
+.footer {
+  color: #ff7a7a;
+  margin-top: auto;
+  /* background-color: rgba(75, 19, 19, 0.71); */
+  background-color: #0b0101c9;
+  padding: 14px 0;
+  text-align: center;
+  /* font-family: "Fascinate", cursive; */
+  font-family: "Kdam Thmor Pro", sans-serif;
+}

@@ -1,0 +1,22 @@
+.HomePage {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  /* font-family: "Fascinate", cursive; */
+  font-family: "Kdam Thmor Pro", sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.HomePage-title {
+  color: #ff7a7a;
+  font-size: 5rem;
+  font-weight: 400;
+  padding-top: 10rem;
+}
+.sponsor {
+  color: #fff;
+  font-size: 2rem;
+  font-style: italic;
+  padding: 10px;
+}

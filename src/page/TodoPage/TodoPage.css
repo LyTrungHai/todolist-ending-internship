@@ -1,0 +1,82 @@
+.input-todo-text {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 85%;
+  padding-right: 5px;
+  padding-left: 20px;
+  border-radius: calc(0.5 * 100px);
+}
+
+.input-todo-text::placeholder {
+  color: #000;
+}
+
+.btn-submit {
+  background: transparent;
+  color: #5b5b5b;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 15px;
+}
+
+.input-todo-text,
+.btn-submit {
+  height: 60px;
+  outline: none;
+  border: none;
+}
+
+.form-container {
+  border-radius: 50px;
+  box-shadow: 0 1px 6px 0 rgb(0 0 0 / 38%);
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  width: 550px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column !important;
+  height: 100vh;
+}
+
+.icon-delete:hover {
+  color: #e62b4a;
+}
+.todo-item:hover {
+  background-color: #b6cbdc !important;
+}
+.todo-title {
+  word-break: break-all;
+}
+.filter-active::after {
+  content: "";
+  height: 3px;
+  background-color: #285cda;
+  width: 50%;
+  display: block;
+}
+.filter-button {
+  font-size: 24px;
+}
+
+/* .filter-button::after {
+  content: "";
+  height: 3px;
+  background-color: #e62b4a;
+  width: 0px;
+  display: block;
+  transition: all 0.3s;
+} */
+.filter-button:focus::after {
+  width: 50%;
+}
+.form-filter {
+  border-bottom: 1px solid #ff7a7a;
+}
+/* 
+.filter-button:hover::after {
+  width: 50%;
+} */

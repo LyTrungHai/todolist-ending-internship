@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import LoginForm from "./page/LoginPage/LoginForm";
+import HomePage from "./page/HomePage/HomePage";
+import { Routes, Route, Navigate } from "react-router-dom";
+import RegisterForm from "./page/RegisterPage/RegisterForm";
+import Todo from "./page/TodoPage";
+import NotFound from "./page/Notfound";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<LoginForm />} />
+        <Route path="/register" element={<RegisterForm />} />
+        <Route path="*" element={<NotFound />} />
+        <Route
+          path="/todopage"
+          element={
+            <RequireAuth redirectTo="/login">
+              <Todo />
+            </RequireAuth>
+          }
+        />
+      </Routes>
     </div>
   );
+}
+function RequireAuth({ children, redirectTo }) {
+  let isAuthenticated = localStorage.getItem("LOGIN_USER");
+  return isAuthenticated ? children : <Navigate to={redirectTo} />;
 }
 
 export default App;

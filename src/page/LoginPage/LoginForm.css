@@ -1,0 +1,49 @@
+.Login-container {
+  background-image: url(../../asset/bg_form1.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column !important;
+  object-fit: cover;
+}
+.Login-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.LoginForm {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.LoginForm-title {
+  font-size: 24px;
+  /* font-family: "Fascinate", cursive; */
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+.LoginForm a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.LoginForm a:hover {
+  text-decoration: underline;
+}
+.linkto-register {
+  margin-bottom: 5px;
+}
+.message-error {
+  color: #fd5a65;
+}
+
+.show-hidden-pw {
+  position: absolute !important;
+  right: 2px;
+  top: 24px;
+}

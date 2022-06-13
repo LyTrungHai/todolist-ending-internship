@@ -1,0 +1,54 @@
+.Register-container {
+  background-image: url(../../asset/car.jpg);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column !important;
+  object-fit: cover;
+  background-position: center;
+}
+.Register-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.RegisterForm {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.RegisterForm-title {
+  font-size: 24px;
+  /* font-family: "Fascinate", cursive; */
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+.RegisterForm a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.RegisterForm a:hover {
+  text-decoration: underline;
+}
+.RegisterForm .linkto-terms {
+  color: #1a5fd0;
+}
+.linkto-login {
+  margin-bottom: 5px;
+}
+
+.show-hidden-pw2 {
+  position: absolute !important;
+  top: 15px;
+  right: 4px;
+}
+@media screen and (max-width: 600px) {
+  .RegisterForm {
+    height: 100vh;
+  }
+}
